@@ -4,7 +4,7 @@
 /*	lrt_assert.h						LRT_ASSERT	*/
 /*										*/
 /*	By : ChocolateCharlie							*/
-/*	Updated :	2017-07-01	by ChocolateCharlie			*/
+/*	Updated :	2017-07-02	by ChocolateCharlie			*/
 /*										*/
 /* **************************************************************************** */
 
@@ -31,7 +31,7 @@
 #ifndef	LRT_NDEBUG
 #define	lrt_assert(e)	if (!e)							\
 			{							\
-				printf( "Assertion failed: %s\n"		\
+				printf( "[LIB_RT]Assertion failed: %s\n"	\
 					"Source file: %s\n"			\
 					"Enclosing function: %s\t"		\
 					"Line: %d\n",				\
@@ -40,5 +40,19 @@
 			}
 #else
 #define lrt_assert(ignore)((void) 0)
+#endif
+
+/*
+** Define states macros :
+**	- LRT_FAILURE	0		(int)
+**	_ LRT_SUCCESS	non-zero	(int)
+*/
+
+#ifndef	LRT_ASSERT_H_INCLUDED
+#define	LRT_ASSERT_H_INCLUDED
+
+#define	LRT_FAILURE	(int)0
+#define	LRT_SUCCESS	(int)1
+
 #endif
 

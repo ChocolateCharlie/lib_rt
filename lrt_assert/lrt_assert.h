@@ -43,9 +43,9 @@
 #endif
 
 /*
-** Define states macros :
+** Define state macros :
 **	- LRT_FAILURE	0		(int)
-**	_ LRT_SUCCESS	non-zero	(int)
+**	- LRT_SUCCESS	non-zero	(int)
 */
 
 #ifndef	LRT_ASSERT_H_INCLUDED

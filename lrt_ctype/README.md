@@ -1,5 +1,5 @@
 ## THE LIB_RT PROJECT - DOCUMENTATION : LRT_CTYPE
-Updated :	2017-07-02	by : ChocolateCharlie
+Updated :	2017-07-09	by : ChocolateCharlie
 
 lrt_ctype.h is a free implementation of <ctype.h> which contains the following functions :
 
@@ -22,4 +22,5 @@ lrt_ctype.h is a free implementation of <ctype.h> which contains the following f
 
 Knowing that these functions are quite small, documentation is provided in the source code.
 
-Tests will soon be released.
+Tests are available in the lrtest_ctype repository of the lib_rtest module.
+

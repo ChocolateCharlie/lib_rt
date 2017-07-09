@@ -4,7 +4,7 @@
 /*	lrtest_ctype.h					LRTEST_CTYPE	*/
 /*									*/
 /*	By : ChocolateCharlie						*/
-/*	Updated :	2017-07-02	by :	ChocolateCharlie	*/
+/*	Updated :	2017-07-09	by :	ChocolateCharlie	*/
 /*									*/
 /* ******************************************************************** */
 
@@ -36,6 +36,14 @@ int	lrtest_iscntrl	(void);
 int	lrtest_isdigit	(void);
 int	lrtest_isgraph	(void);
 int	lrtest_islower	(void);
+int	lrtest_isprint	(void);
+int	lrtest_ispunct	(void);
+int	lrtest_isspace	(void);
+int	lrtest_isupper	(void);
+int	lrtest_isxdigit	(void);
+int	lrtest_toascii	(void);
+int	lrtest_tolower	(void);
+int	lrtest_toupper	(void);
 
 #endif
 

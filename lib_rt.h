@@ -15,7 +15,6 @@
 #include "lrt_ctype/lrt_ctype.h"
 #include "lrt_limits.h"
 #include "lrt_stdio/lrt_stdio.h"
-#include "lib_rtest/lib_rtest.h"
 
 #endif
 

@@ -4,7 +4,7 @@
 /*	lrtest_ctype.c					LRTEST_CTYPE	*/
 /*									*/
 /*	By :	ChocolateCharlie					*/
-/*	Updated :	2017-07-02	by :	ChocolateCharlie	*/
+/*	Updated :	2017-07-09	by :	ChocolateCharlie	*/
 /*									*/
 /* ******************************************************************** */
 
@@ -43,6 +43,14 @@ int	lrtest_ctype	(void)
 		lrtest_iscntrl() &&
 		lrtest_isdigit() &&
 		lrtest_isgraph() &&
-		lrtest_islower()) ? LRT_SUCCESS : LRT_FAILURE);
+		lrtest_islower() &&
+		lrtest_isprint() &&
+		lrtest_ispunct() &&
+		lrtest_isspace() &&
+		lrtest_isupper() &&
+		lrtest_isxdigit() &&
+		lrtest_toascii() &&
+		lrtest_tolower() &&
+		lrtest_toupper()) ? LRT_SUCCESS : LRT_FAILURE);
 }
 

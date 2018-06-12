@@ -3,15 +3,15 @@ Updated : 2018-06-12 by : ChocolateCharlie
 
 This file contains informations about :
 
-	- the ```<lrt_assert.h>``` header
-	- the ```lrt_assert()``` macro
-	- the ```LRT_FAILURE``` and ```LRT_SUCCESS``` macros
+	- the <lrt_assert.h> header
+	- the lrt_assert() macro
+	- the LRT_FAILURE and LRT_SUCCESS macros
 
 Most of these informations are issued from :
 [The Open Group Base Specifications Issue 7, 2018 edition,
 IEEE Std 1003.1-2017 (Revision of IEEE Std 1003.1-2008)
-Copyright © 2001-2018 The IEEE and The Open Group]
-(pubs.opengroup.org/onlinepubs/9699919799)
+Copyright © 2001-2018 The IEEE and The Open Group
+](pubs.opengroup.org/onlinepubs/9699919799)
 
 **/!\\ WARNING :** ```<lrt_assert.h>``` relies on ```<stdio.h>``` and
 ```<stdlib.h>```.
@@ -50,9 +50,9 @@ call that failed on ```stderr``` and shall call ```abort()```.
 The informations written about the call that failed shall include :
 
 	- the text of the argument
-	- the name of the source file (```__FILE__```)
-	- the source file line number (```__LINE__```)
-	- the name of the enclosing function (```__func__```)
+	- the name of the source file (__FILE__)
+	- the source file line number (__LINE__)
+	- the name of the enclosing function (__func__)
 
 Forcing a definition of the name ```LRT_NDEBUG```, either from the compiler
 command line or with the preprocessor control statement :

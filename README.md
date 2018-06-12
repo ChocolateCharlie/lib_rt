@@ -14,8 +14,10 @@ If you want to use only a few modules, it is possible to do more specific includ
 
 **/!\\ Warning :** though parts of ```<stdio.h>``` are re-implemented, this library relies on it, and may rely in the future on other libraries.
 
+This library also relies on ```<stdlib.h>``` for the **_lrt_assert_** module.
+
 ## What are the modules currently available ?
-### lrt_assert (documentation may not be up to date)
+### lrt_assert
 A free implementation of ```<assert.h>```.
 
 To include this header, use :
@@ -32,7 +34,7 @@ To include this module, use :
 ```
 Tests are available separately in the **_lrtest_ctype_** repository (see **_lib_rtest_**).
 
-### lrt_limits.h (work in progress)
+### lrt_limits.h (partially implemented)
 A free implementation of ```<limits.h>```.
 
 To include this header, use :

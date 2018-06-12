@@ -4,11 +4,9 @@
 /*    lrt_assert.h                                             LRT_ASSERT    */
 /*                                                                           */
 /*    By :    ChocolateCharlie                                               */
-/*    Updated :    2018-06-11    by ChocolateCharlie                         */
+/*    Updated :    2018-06-12    by ChocolateCharlie                         */
 /*                                                                           */
 /* ************************************************************************* */
-
-
 
 /*
 ** Include :

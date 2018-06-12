@@ -4,15 +4,33 @@
 /*    lrt_limits.h                                                 LIB_RT    */
 /*                                                                           */
 /*    By : ChocolateCharlie                                                  */
-/*    Updated :    2018-06-11    by ChocolateCharlie                         */
+/*    Updated :    2018-06-12    by ChocolateCharlie                         */
 /*                                                                           */
 /* ************************************************************************* */
+
+/*
+** Implementation-defined constants
+**	- Runtime Invariant Values : not implemented
+**	- Pathname Variable Values : not implemented
+**	- Runtime Increasable Values : not implemented
+**	- Maximum Values : not implemented
+**	- Minimum Values : not implemented, except LRT_POSIX_SSIZE_MAX
+**	- Numerical Limits : partially implemented
+**		Not implemented : LRT_CHAR_MAX, LRT_CHAR_MIN
+**	- Other Invariant Values
+*/
 
 #ifndef	LRT_LIMITS_H_INCLUDED
 #define	LRT_LIMITS_H_INCLUDED
 
 /*
-** Define numerical limits
+** Minimum Values
+*/
+
+#define	LRT_POSIX_SSIZE_MAX		(ssize_t)32767
+
+/*
+** Numerical Limits
 */
 
 #define	LRT_CHAR_BIT	8
@@ -36,11 +54,13 @@
 #define	LRT_SHRT_MAX	(short)32767
 #define	LRT_SHRT_MIN	(short)-32767
 
+#define SSIZE_MAX		(ssize_t)LRT_POSIX_SSIZE_MAX
+
 #define	LRT_UCHAR_MAX	(unsigned char)255
 #define	LRT_UCHAR_MIN	(unsigned char)0
 
 #define	LRT_UINT_MAX	(unsigned)4294967295
-#define	LRT_ULLONG8MAX	(unsigned long long)18446744073709551615
+#define	LRT_ULLONG_MAX	(unsigned long long)18446744073709551615
 #define	LRT_ULONG_MAX	(unsigned long)4294967295
 #define	LRT_USHRT_MAX	(unsigned short)65535
 

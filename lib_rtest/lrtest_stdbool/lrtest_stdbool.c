@@ -37,7 +37,7 @@
 int		lrtest_stdbool	()
 {
 		return(lrtest_true_macro()
-			&& lrtest_flase_macro()
+			&& lrtest_false_macro()
 			&& lrtest_bool_true_false_defined());
 }
 

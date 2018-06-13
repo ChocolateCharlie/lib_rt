@@ -1,44 +1,38 @@
 /* ************************************************************************* */
 /*                                                                           */
 /*                                                     THE LIB_RT PROJECT    */
-/*    lrtest_stdbool.c                                     LRTEST_STDBOOL    */
+/*    lrtest_bool_true_false_defined_macro.c               LRTEST_STDBOOL    */
 /*                                                                           */
 /*    By :    ChocolateCharlie                                               */
-/*    Update :    2018-06-13    by ChocolateCharlie                          */
+/*    Updated :    2018-06-13    by ChocolateCharlie                         */
 /*                                                                           */
 /* ************************************************************************* */
 
 /*
 ** Include :
-**	EXTERNAL HEADERS : none
+**	EXRERNAL HEADERS : none
 **	INTERNAL HEADERS : (1)
 **	- lrtest_stdbool.h
 */
 
-#include "lrtest_stdbool.h"
-
 /* ------------------------------------------------------------------------ */
-/*	Name : lrtest_stdbool													*/
-/*	Goal : test lrt_stdbool													*/
+/*	Name : lrtest_bool_true_false_defined_macro()							*/
+/*	Goal : Test the LRT_BOOL_TRUE_FALSE_DEFINED macro						*/
 /*	Original library : -													*/
 /* ------------------------------------------------------------------------ */
 /*	Parameters : None												(void)	*/
 /*	Returns : an integer											(int)	*/
-/*				- LRT_SUCCESS if all tests passed							*/
+/*				- LRT_SUCCESS if the macro's value is 1						*/
 /*				- LRT_FAILURE otherwise										*/
 /* ------------------------------------------------------------------------ */
 /*	Errors : No errors are defined.											*/
 /* ------------------------------------------------------------------------ */
 /*	Description :															*/
-/*	Run all the available tests for the lrt_stdbool.h header.				*/
-/* ------------------------------------------------------------------------ */
-/*	WARNING : This function might abort program in case of failure.			*/
+/*	Test if LRT_BOOL_TRUE_FALSE_DEFINED is equal to 1.						*/
 /* ------------------------------------------------------------------------ */
 
-int		lrtest_stdbool	()
+int		lrtest_bool_true_false_defined_macro	()
 {
-	return((lrtest_bool_true_false_defined_macro() &&
-			lrtest_false_macro() &&
-			lrtest_true_macro()) ? LRT_SUCCESS : LRT_FAILURE);
+	return ((LRT_BOOL_TRUE_FALSE_DEFINED == 1) ? LRT_SUCCESS : LRT_FAILURE);
 }
 

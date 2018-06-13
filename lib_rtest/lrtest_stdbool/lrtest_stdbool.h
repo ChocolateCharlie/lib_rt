@@ -14,11 +14,13 @@
 /*
 ** Include :
 **	EXTERNAL HEADERS : none
-**	INTERNAL HEADERS : (1)
+**	INTERNAL HEADERS : (2)
 **	- lrt_assert.h
+**	- lrt_stdbool.h
 */
 
 #include "../../lrt_assert/lrt_assert.h"
+#include "../../lrt_stdbool/lrt_stdbool.h"
 
 
 /*

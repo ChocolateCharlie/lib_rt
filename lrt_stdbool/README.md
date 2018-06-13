@@ -13,7 +13,7 @@ IEEE Std 1003.1-2017 (Revision of IEEE Std 1003.1-2008)
 Copyright © 2001-2018 The IEEE and The Open Group
 ](pubs.opengroup.org/onlinepubs/9699919799)
 
-### lrt_stdbool.h - verify program assertion
+### lrt_stdbool.h - boolean type and values
 
 **Description :** define the following macros :
   - ```lrt_bool``` defined as a type

@@ -24,6 +24,9 @@ To include this header, use :
 ``` C
 #include "lib_rt/lrt_assert/lrt_assert.h"
 ```
+This module relies on :
+  - ```<stdlib.h>```
+  - ```<stdio.h>```
 
 ### lrt_ctype (documentation may not be up to date)
 A free implementation of ```<ctype.h>```.
@@ -39,7 +42,7 @@ A free implementation of ```<limits.h>```.
 
 To include this header, use :
 ```C
-#include "lib_rt/lrt_limits.h"
+#include "lib_rt/lrt_limits/lrt_limits.h"
 ```
 
 ### lrt_stdio.h (work in progress)
@@ -49,6 +52,8 @@ To include this header, use :
 ```C
 #include "lib_rt/lrt_stdio.h"
 ```
+This module relies on :
+  - ```<stdio.h>```
 
 ### lib_rtest (documentation may not be up to date)
 Testing module of **_lib_rt_**.

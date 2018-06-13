@@ -4,9 +4,12 @@
 /*    lrt_assert.h                                             LRT_ASSERT    */
 /*                                                                           */
 /*    By :    ChocolateCharlie                                               */
-/*    Updated :    2018-06-12    by ChocolateCharlie                         */
+/*    Updated :    2018-06-13    by ChocolateCharlie                         */
 /*                                                                           */
 /* ************************************************************************* */
+
+#ifndef	LRT_ASSERT_H_INCLUDED
+#define	LRT_ASSERT_H_INCLUDED
 
 /*
 ** Include :
@@ -18,7 +21,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
 
 /*
 ** Define the lrt_assert() macro
@@ -37,19 +39,21 @@
 						}
 #else
 #define	lrt_assert(ignore)((void) 0)
-#endif
-
+#endif	//LRT_NDEBUG
 
 /*
 ** Define state macros :
 ** - LRT_FAILURE	0			(int)
 ** - LRT_SUCCESS	non_zero	(int)
 */
-#ifndef	LRT_ASSERT_H_INCLUDED
-#define	LRT_ASSERT_H_INCLUDED
 
+#ifndef	LRT_FAILURE
 #define	LRT_FAILURE	(int)0
-#define	LRT_SUCCESS	(int)1
-
 #endif
+
+#ifndef	LRT_SUCCESS
+#define	LRT_SUCCESS	(int)1
+#endif
+
+#endif	//LRT_ASSERT_H_INCLUDED
 

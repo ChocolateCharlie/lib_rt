@@ -90,3 +90,13 @@ To include this sub-module, use :
 ```C
 #include "lib_rt/lib_rtest/lrt_ctype/lrt_ctype.h"
 ```
+
+#### lrtest_stdbool (work in progress)
+Testing functions for **_lrt_stdbool_**.
+
+To include this sub-module, use :
+```C
+#include "lib_rt/lib_rtest/lrt_stdbool/lrt_stdbool.h"
+```
+This module relies on :
+  - ```lrt_assert.h```

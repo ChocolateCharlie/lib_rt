@@ -45,12 +45,20 @@ To include this header, use :
 #include "lib_rt/lrt_limits/lrt_limits.h"
 ```
 
+### lrt_stdbool.h (work in progress : not tested nor documented)
+A free implementation of ```<stdbool.h>```.
+
+To include this header, use :
+```C
+#include "lib_rt/lrt_stdbool/lrt_stdbool.h"
+```
+
 ### lrt_stdio.h (work in progress)
 A free and partial implementation of ```<stdio.h>```.
 
 To include this header, use :
 ```C
-#include "lib_rt/lrt_stdio.h"
+#include "lib_rt/lrt_stdio/lrt_stdio.h"
 ```
 This module relies on :
   - ```<stdio.h>```
@@ -62,6 +70,18 @@ To include all headers and sub-modules of this module, use :
 ```C
 #include "lib_rt/lib_rtest/lib_rtest.h"
 ```
+
+#### lrtest_assert (work in progress)
+Testing functions for **_lrt_assert_**.
+
+To include this sub-module, use :
+```C
+ #include "lib_rt/lib_rtest/lrt_assert/lrt_assert.h"
+ ```
+ This module relies on :
+  - ```<stdio.h>```
+  - ```lrt_assert.h```
+  - ```lrt_stdbool.h```
 
 #### lrtest_ctype (documentation may not be up to date)
 Testing functions for **_lrt_ctype_**.

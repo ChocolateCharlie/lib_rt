@@ -4,7 +4,7 @@
 /*    lrtest_true_macro.c                                  LRTEST_STDBOOL    */
 /*                                                                           */
 /*    By :    ChocolateCharlie                                               */
-/*    Updated :    2018-06-13    by ChocolateCharlie                         */
+/*    Updated :    2018-06-14    by ChocolateCharlie                         */
 /*                                                                           */
 /* ************************************************************************* */
 
@@ -16,6 +16,7 @@
 */
 
 #include "lrtest_stdbool.h"
+
 
 /* ------------------------------------------------------------------------ */
 /*	Name : lrtest_true_macro()												*/

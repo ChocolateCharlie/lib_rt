@@ -15,6 +15,8 @@
 **	- lrtest_stdbool.h
 */
 
+#include "lrtest_stdbool.h"
+
 /* ------------------------------------------------------------------------ */
 /*	Name : lrtest_bool_true_false_defined_macro()							*/
 /*	Goal : Test the LRT_BOOL_TRUE_FALSE_DEFINED macro						*/

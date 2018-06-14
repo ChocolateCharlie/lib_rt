@@ -45,7 +45,7 @@ To include this header, use :
 #include "lib_rt/lrt_limits/lrt_limits.h"
 ```
 
-### lrt_stdbool.h (work in progress : not tested nor documented)
+### lrt_stdbool.h - tested and documented
 A free implementation of ```<stdbool.h>```.
 
 To include this header, use :
@@ -91,7 +91,7 @@ To include this sub-module, use :
 #include "lib_rt/lib_rtest/lrt_ctype/lrt_ctype.h"
 ```
 
-#### lrtest_stdbool (work in progress)
+#### lrtest_stdbool - available
 Testing functions for **_lrt_stdbool_**.
 
 To include this sub-module, use :
@@ -100,3 +100,4 @@ To include this sub-module, use :
 ```
 This module relies on :
   - ```lrt_assert.h```
+  - ```lrt_stdbool.h```

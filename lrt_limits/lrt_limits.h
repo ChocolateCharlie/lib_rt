@@ -4,7 +4,7 @@
 /*    lrt_limits.h                                                 LIB_RT    */
 /*                                                                           */
 /*    By : ChocolateCharlie                                                  */
-/*    Updated :    2018-06-13    by ChocolateCharlie                         */
+/*    Updated :    2018-06-16    by ChocolateCharlie                         */
 /*                                                                           */
 /* ************************************************************************* */
 
@@ -12,10 +12,21 @@
 #define	LRT_LIMITS_H_INCLUDED
 
 /*
+** Include :
+**	EXTERNAL HEADERS : none
+**	INTERNAL HEADERS : (1)
+**	- lrt_stdio.h	in order to use the lrt_ssize_t macro
+*/
+
+#include "../lrt_stdio/lrt_stdio.h"
+
+
+/*
 ** Minimum Values
 */
 
-#define	LRT_POSIX_SSIZE_MAX		(ssize_t)32767
+#define	LRT_POSIX_SSIZE_MAX		(lrt_ssize_t)32767
+
 
 /*
 ** Numerical Limits
@@ -42,7 +53,7 @@
 #define	LRT_SHRT_MAX			(short)32767
 #define	LRT_SHRT_MIN			(short)-32767
 
-#define SSIZE_MAX				(ssize_t)LRT_POSIX_SSIZE_MAX
+#define SSIZE_MAX				(lrt_ssize_t)LRT_POSIX_SSIZE_MAX
 
 #define	LRT_UCHAR_MAX			(unsigned char)255
 #define	LRT_UCHAR_MIN			(unsigned char)0

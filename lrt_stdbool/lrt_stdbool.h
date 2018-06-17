@@ -3,7 +3,7 @@
 /*                                                     THE LIB_RT PROJECT    */
 /*    lrt_stdbool.h                                           LRT_STDBOOL    */
 /*                                                                           */
-/*    Updated :    2018-06-13    by ChocolateCharlie                         */
+/*    Updated :    2018-06-17    by ChocolateCharlie                         */
 /*                                                                           */
 /* ************************************************************************* */
 
@@ -16,5 +16,5 @@ typedef	enum {lrt_false = (int)0, lrt_true = (int)1}	lrt_bool;
 #define	LRT_BOOL_TRUE_FALSE_DEFINED	(int)1
 #endif
 
-#endif
+#endif	// LRT_STDBOOL_H_DEFINED
 

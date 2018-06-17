@@ -37,5 +37,5 @@ int		lrtest_bool_true_false_defined_macro();
 int		lrtest_false_macro();
 int		lrtest_true_macro();
 
-#endif
+#endif	// LRTEST_STDBOOL_H_DEFINED
 

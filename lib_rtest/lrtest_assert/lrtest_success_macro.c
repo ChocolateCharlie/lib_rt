@@ -1,45 +1,41 @@
 /* ************************************************************************* */
 /*                                                                           */
 /*                                                     THE LIB_RT PROJECT    */
-/*    lrtest_assert.c                                       LRTEST_ASSERT    */
+/*    lrtest_success_macro.c                               LRTEST_STDBOOL    */
 /*                                                                           */
 /*    By :    ChocolateCharlie                                               */
-/*    Updated :    2018-06-16    by ChocolateCharlie                         */
+/*    Updated :    2018-06-17    by ChocolateCharlie                         */
 /*                                                                           */
 /* ************************************************************************* */
 
 /*
 ** Include :
-**	EXTERNAL HEADERS : none
+**	EXRERNAL HEADERS : none
 **	INTERNAL HEADERS : (1)
 **	- lrtest_assert.h
 */
 
 #include "lrtest_assert.h"
 
+
 /* ------------------------------------------------------------------------ */
-/*	Name : lrtest_assert													*/
-/*	Goal : test lrt_assert header											*/
+/*	Name : lrtest_success_macro()											*/
+/*	Goal : Test the LRT_SUCCESS macro										*/
 /*	Original library : -													*/
 /* ------------------------------------------------------------------------ */
 /*	Parameters : None												(void)	*/
 /*	Returns : a boolean											(lrt_bool)	*/
-/*				- lrt_true if all tests passed								*/
+/*				- lrt_true if the LRT_SUCCESS macro is not equal to zero	*/
+/*				- lrt_false otherwise										*/
 /* ------------------------------------------------------------------------ */
 /*	Errors : No errors are defined.											*/
 /* ------------------------------------------------------------------------ */
 /*	Description :															*/
-/*	Run all the available tests for the lrt_assert header.					*/
-/* ------------------------------------------------------------------------ */
-/*	WARNING : This function might abort program in case of failure.			*/
-/*	This function does not test the behavior of the lrt_assert() macro when	*/
-/*	it is expected to abort.												*/
+/*	Test LRT_SUCCESS														*/
 /* ------------------------------------------------------------------------ */
 
-lrt_bool		lrtest_assert	()
+lrt_bool	lrtest_success_macro	()
 {
-	return(lrtest_assert_macro()
-		&& lrtest_failure_macro()
-		&& lrtest_success_macro());
+	return ((LRT_SUCCESS != 0) ? lrt_true : lrt_false);
 }
 

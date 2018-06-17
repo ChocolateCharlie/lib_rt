@@ -4,7 +4,7 @@
 /*    lrt_assert.h                                             LRT_ASSERT    */
 /*                                                                           */
 /*    By :    ChocolateCharlie                                               */
-/*    Updated :    2018-06-14    by ChocolateCharlie                         */
+/*    Updated :    2018-06-17    by ChocolateCharlie                         */
 /*                                                                           */
 /* ************************************************************************* */
 
@@ -21,6 +21,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+
 
 /*
 ** Define the lrt_assert() macro
@@ -56,3 +57,4 @@
 #endif
 
 #endif	//LRT_ASSERT_H_INCLUDED
+

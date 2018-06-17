@@ -1,9 +1,10 @@
 /* ************************************************************************* */
+/*                                                                           */
 /*                                                     THE LIB_RT PROJECT    */
 /*    Rls.c                                                     LRT_SHELL    */
 /*                                                                           */
-/*    By : ChocolateCharlie                                                  */
-/*    Updated : 2018-06-17    by ChocolateCharlie                            */
+/*    By :    ChocolateCharlie                                               */
+/*    Updated :    2018-06-17    by ChocolateCharlie                         */
 /*                                                                           */
 /* ************************************************************************* */
 

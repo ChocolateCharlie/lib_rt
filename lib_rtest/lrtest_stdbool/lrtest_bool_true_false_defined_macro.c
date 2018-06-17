@@ -4,7 +4,7 @@
 /*    lrtest_bool_true_false_defined_macro.c               LRTEST_STDBOOL    */
 /*                                                                           */
 /*    By :    ChocolateCharlie                                               */
-/*    Updated :    2018-06-14    by ChocolateCharlie                         */
+/*    Updated :    2018-06-17    by ChocolateCharlie                         */
 /*                                                                           */
 /* ************************************************************************* */
 
@@ -19,7 +19,7 @@
 
 
 /* ------------------------------------------------------------------------ */
-/*	Name : lrtest_bool_true_false_defined_macro()							*/
+/*	Name : lrtest_bool_true_false_defined_macro								*/
 /*	Goal : Test the LRT_BOOL_TRUE_FALSE_DEFINED macro						*/
 /*	Original library : -													*/
 /* ------------------------------------------------------------------------ */
@@ -34,7 +34,7 @@
 /*	Test if LRT_BOOL_TRUE_FALSE_DEFINED is equal to 1.						*/
 /* ------------------------------------------------------------------------ */
 
-int		lrtest_bool_true_false_defined_macro	()
+int		lrtest_bool_true_false_defined_macro	(void)
 {
 	return ((LRT_BOOL_TRUE_FALSE_DEFINED == 1) ? LRT_SUCCESS : LRT_FAILURE);
 }

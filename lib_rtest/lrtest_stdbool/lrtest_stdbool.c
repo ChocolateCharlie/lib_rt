@@ -4,7 +4,7 @@
 /*    lrtest_stdbool.c                                     LRTEST_STDBOOL    */
 /*                                                                           */
 /*    By :    ChocolateCharlie                                               */
-/*    Update :    2018-06-13    by ChocolateCharlie                          */
+/*    Update :    2018-06-17    by ChocolateCharlie                          */
 /*                                                                           */
 /* ************************************************************************* */
 
@@ -17,9 +17,10 @@
 
 #include "lrtest_stdbool.h"
 
+
 /* ------------------------------------------------------------------------ */
 /*	Name : lrtest_stdbool													*/
-/*	Goal : test lrt_stdbool													*/
+/*	Goal : Run all the tests available for the lrt_stdbool header			*/
 /*	Original library : -													*/
 /* ------------------------------------------------------------------------ */
 /*	Parameters : None												(void)	*/
@@ -30,12 +31,10 @@
 /*	Errors : No errors are defined.											*/
 /* ------------------------------------------------------------------------ */
 /*	Description :															*/
-/*	Run all the available tests for the lrt_stdbool.h header.				*/
-/* ------------------------------------------------------------------------ */
-/*	WARNING : This function might abort program in case of failure.			*/
+/*	Run all the available tests for the lrt_stdbool header.					*/
 /* ------------------------------------------------------------------------ */
 
-int		lrtest_stdbool	()
+int		lrtest_stdbool							(void)
 {
 	return((lrtest_bool_true_false_defined_macro() &&
 			lrtest_false_macro() &&

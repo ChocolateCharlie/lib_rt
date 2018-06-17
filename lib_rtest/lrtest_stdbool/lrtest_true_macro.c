@@ -4,7 +4,7 @@
 /*    lrtest_true_macro.c                                  LRTEST_STDBOOL    */
 /*                                                                           */
 /*    By :    ChocolateCharlie                                               */
-/*    Updated :    2018-06-14    by ChocolateCharlie                         */
+/*    Updated :    2018-06-17    by ChocolateCharlie                         */
 /*                                                                           */
 /* ************************************************************************* */
 
@@ -19,7 +19,7 @@
 
 
 /* ------------------------------------------------------------------------ */
-/*	Name : lrtest_true_macro()												*/
+/*	Name : lrtest_true_macro												*/
 /*	Goal : Test the lrt_true macro											*/
 /*	Original library : -													*/
 /* ------------------------------------------------------------------------ */
@@ -34,7 +34,7 @@
 /*	Test lrt_true															*/
 /* ------------------------------------------------------------------------ */
 
-int		lrtest_true_macro	()
+int		lrtest_true_macro							(void)
 {
 	return ((lrt_true) ? LRT_SUCCESS : LRT_FAILURE);
 }

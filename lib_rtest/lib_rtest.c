@@ -1,41 +1,46 @@
-/* ******************************************************************** */
-/*									*/
-/*						THE LIB_RT PROJECT	*/
-/*	lib_rtest.c					LIB_RTEST	*/
-/*									*/
-/*	By :	ChocolateCharlie					*/
-/*	Updated :	2017-07-02	by :	ChocolateCharlie	*/
-/*									*/
-/* ******************************************************************** */
+/* ************************************************************************* */
+/*                                                                           */
+/*                                                     THE LIB_RT PROJECT    */
+/*    lib_rtest.c                                               LIB_RTEST    */
+/*                                                                           */
+/*    By :    ChocolateCharlie                                               */
+/*    Updated :    2018-06-17    by ChocolateCharlie                         */
+/*                                                                           */
+/* ************************************************************************* */
 
 /*
 ** Include :
-**	- lib_rtest.h	in order to use testing functions ; LRT_FAILURE ;
-** LRT_SUCCESS
+**	EXTERNAL HEADERS : none
+**	INTERNAL HEADERS : (1)
+**	- lib_rtest.h
 */
 
 #include "lib_rtest.h"
 
-/* ******************************************************************** */
-/*	Name : lib_rtest						*/
-/*	Goal : test all lib_rt functions				*/
-/*	Original library : -						*/
-/* -------------------------------------------------------------------- */
-/*	Parameters : None					(void)	*/
-/*	Returns : an integer					(int)	*/
-/*		- LRT_SUCCESS if all tests passed			*/
-/*		- (might) LRT_FAILURE otherwise				*/
-/* -------------------------------------------------------------------- */
-/*	Errors : No errors are defined.					*/
-/* -------------------------------------------------------------------- */
-/*	Description : -							*/
-/* -------------------------------------------------------------------- */
-/*	WARNING : This function might abort program in case of failure.	*/
-/*									*/
-/* ******************************************************************** */
 
-int	lib_rtest	(void)
+/* ------------------------------------------------------------------------ */
+/*	Name : lib_rtest														*/
+/*	Goal : Run most of the tests available in the lib_rtest					*/
+/*	Original library : -													*/
+/* ------------------------------------------------------------------------ */
+/*	Parameters : None												(void)	*/
+/*	Returns : an integer											(int)	*/
+/*				- LRT_SUCCESS if all tests passed							*/
+/*				- LRT_FAILURE otherwise										*/
+/* ------------------------------------------------------------------------ */
+/*	Errors : No errors are defined.											*/
+/* ------------------------------------------------------------------------ */
+/*	Description :															*/
+/*	Run most of the tests available in the lib_rtest for the lib_rt library.*/
+/*	Tests that cannot be automated (abortion expected, manual intervention	*/
+/*	needed etc.) will not be run.											*/
+/* ------------------------------------------------------------------------ */
+/*	WARNING : This function might abort program in case of failure.			*/
+/* ------------------------------------------------------------------------ */
+
+int		lib_rtest	(void)
 {
-	return ((lrtest_ctype()) ? LRT_SUCCESS : LRT_FAILURE);
+	return ( ( lrtest_assert
+			&& lrtest_stdbool) ? LRT_SUCCESS : LRT_FAILURE);
 }
 

@@ -37,7 +37,7 @@
 /*	it is expected to abort.												*/
 /* ------------------------------------------------------------------------ */
 
-lrt_bool	lrtest_assert_macro	()
+lrt_bool	lrtest_assert_macro									(void)
 {
 	return(lrtest_assert_when_false_and_ndebug_dont_raise()
 		&& lrtest_assert_when_true_and_ndebug_dont_raise()
@@ -64,7 +64,7 @@ lrt_bool	lrtest_assert_macro	()
 /*	WARNING : This function might abort program in case of failure.			*/
 /* ------------------------------------------------------------------------ */
 
-lrt_bool	lrtest_assert_when_false_and_ndebug_dont_raise	()
+lrt_bool	lrtest_assert_when_false_and_ndebug_dont_raise		(void)
 {
 	lrt_bool	lrt_ndebug_defined;
 
@@ -107,7 +107,7 @@ lrt_bool	lrtest_assert_when_false_and_ndebug_dont_raise	()
 /*	WARNING : This function is expected to abort program.					*/
 /* ------------------------------------------------------------------------ */
 
-lrt_bool	lrtest_assert_when_false_and_not_ndebug_raise	()
+lrt_bool	lrtest_assert_when_false_and_not_ndebug_raise		(void)
 {
 	lrt_bool	lrt_ndebug_defined;
 
@@ -147,7 +147,7 @@ lrt_bool	lrtest_assert_when_false_and_not_ndebug_raise	()
 /*	WARNING : This function might abort program in case of failure.			*/
 /* ------------------------------------------------------------------------ */
 
-lrt_bool	lrtest_assert_when_true_and_ndebug_dont_raise	()
+lrt_bool	lrtest_assert_when_true_and_ndebug_dont_raise		(void)
 {
 	lrt_bool	lrt_ndebug_defined;
 
@@ -188,7 +188,7 @@ lrt_bool	lrtest_assert_when_true_and_ndebug_dont_raise	()
 /*	WARNING : This function might abort program in case of failure.			*/
 /* ------------------------------------------------------------------------ */
 
-lrt_bool	lrtest_assert_when_true_and_not_ndebug_dont_raise	()
+lrt_bool	lrtest_assert_when_true_and_not_ndebug_dont_raise	(void)
 {
 	lrt_bool	lrt_ndebug_defined;
 

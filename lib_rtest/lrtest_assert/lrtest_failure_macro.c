@@ -34,7 +34,7 @@
 /*	Test LRT_FAILURE														*/
 /* ------------------------------------------------------------------------ */
 
-lrt_bool	lrtest_failure_macro	()
+lrt_bool	lrtest_failure_macro								(void)
 {
 	return ((LRT_FAILURE == 0) ? lrt_true : lrt_false);
 }

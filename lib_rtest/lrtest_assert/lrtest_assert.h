@@ -27,27 +27,27 @@
 /*
 ** Do all the tests available for this header
 */
-lrt_bool	lrtest_assert();
+lrt_bool	lrtest_assert										(void);
 
 /*
 ** Testing the assert() macro
 */
-lrt_bool	lrtest_assert_macro();
-lrt_bool	lrtest_assert_when_false_and_ndebug_dont_raise();
-lrt_bool	lrtest_assert_when_false_and_not_ndebug_raise();
-lrt_bool	lrtest_assert_when_true_and_ndebug_dont_raise();
-lrt_bool	lrttest_assert_when_true_and_not_ndebug_dont_raise();
+lrt_bool	lrtest_assert_macro									(void);
+lrt_bool	lrtest_assert_when_false_and_ndebug_dont_raise		(void);
+lrt_bool	lrtest_assert_when_false_and_not_ndebug_raise		(void);
+lrt_bool	lrtest_assert_when_true_and_ndebug_dont_raise		(void);
+lrt_bool	lrttest_assert_when_true_and_not_ndebug_dont_raise	(void);
 
 /*
 ** Internal functions to the tests
 */
-lrt_bool	lrtest_init_lrt_ndebug_defined(lrt_bool defined_lrt_ndebug);
+lrt_bool	lrtest_init_lrt_ndebug_defined	(lrt_bool defined_lrt_ndebug);
 
 /*
 ** Testing the LRT_FAILURE and LRT_SUCCESS macro
 */
-lrt_bool	lrtest_failure_macro();
-lrt_bool	lrtest_success_macro();
+lrt_bool	lrtest_failure_macro								(void);
+lrt_bool	lrtest_success_macro								(void);
 
 #endif	// LRTEST_ASSERT_H_INCLUDED
 

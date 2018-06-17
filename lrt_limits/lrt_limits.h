@@ -4,7 +4,7 @@
 /*    lrt_limits.h                                                 LIB_RT    */
 /*                                                                           */
 /*    By : ChocolateCharlie                                                  */
-/*    Updated :    2018-06-16    by ChocolateCharlie                         */
+/*    Updated :    2018-06-17    by ChocolateCharlie                         */
 /*                                                                           */
 /* ************************************************************************* */
 
@@ -65,5 +65,5 @@
 
 #define	LRT_WORD_BIT			(int)32
 
-#endif
+#endif	//LRT_LIMITS_H_INCLUDED
 
